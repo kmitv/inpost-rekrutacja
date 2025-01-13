@@ -1,4 +1,4 @@
-import { getCategories } from "./mockedApi";
+import { Category } from './mockedApi';
 
 export interface CategoryListElement {
   name: string;
@@ -9,80 +9,55 @@ export interface CategoryListElement {
   showOnHome: boolean;
 }
 
-export const categoryTree = async (): Promise<CategoryListElement[]> => {
+const HOME_SYMBOL = '#';
 
-  const res = await getCategories();
-
-  if (!res.data) {
-    return [];
+function parseOrder(title: string, id: number): number {
+  if (title && title.includes(HOME_SYMBOL)) {
+    title = title.split(HOME_SYMBOL)[0];
   }
+  const order = parseInt(title);
+  return isNaN(order) ? id : order;
+}
 
+function createNode(item, order, children) {
+  return {
+    id: item.id,
+    image: item.MetaTagDescription,
+    name: item.name,
+    order: order,
+    children: children,
+    showOnHome: false,
+  };
+}
+
+function mapChildren(children, parentTitle) {
+  return children
+    .map((child) => {
+      const order = parseOrder(child.Title || parentTitle, child.id);
+      const grandChildren = child.children
+        ? mapChildren(child.children, child.Title || parentTitle)
+        : [];
+      return createNode(child, order, grandChildren);
+    })
+    .sort((a, b) => a.order - b.order);
+}
+
+export const categoryTree = async (
+  getCategories: () => Promise<{ data: Category[] }>
+): Promise<CategoryListElement[]> => {
+  const categories = await getCategories();
   const toShowOnHome: number[] = [];
 
-  let result = res.data.map((c1) => {
-    let order = c1.Title;
-    if (c1.Title && c1.Title.includes("#")) {
-      order = c1.Title.split("#")[0];
-      toShowOnHome.push(c1.id);
-    }
-
-    let orderL1 = parseInt(order);
-    if (isNaN(orderL1)) {
-      orderL1 = c1.id;
-    }
-    let l2Kids = c1.children
-      ? c1.children.map((c2) => {
-          let order2 = c1.Title;
-          if (c2.Title && c2.Title.includes("#")) {
-            order2 = c2.Title.split("#")[0];
-          }
-          let orderL2 = parseInt(order2);
-          if (isNaN(orderL2)) {
-            orderL2 = c2.id;
-          }
-          let l3Kids = c2.children
-            ? c2.children.map((c3) => {
-                let order3 = c1.Title;
-                if (c3.Title && c3.Title.includes("#")) {
-                  order3 = c3.Title.split("#")[0];
-                }
-                let orderL3 = parseInt(order3);
-                if (isNaN(orderL3)) {
-                  orderL3 = c3.id;
-                }
-                return {
-                  id: c3.id,
-                  image: c3.MetaTagDescription,
-                  name: c3.name,
-                  order: orderL3,
-                  children: [],
-                  showOnHome: false,
-                };
-              })
-            : [];
-          l3Kids.sort((a, b) => a.order - b.order);
-          return {
-            id: c2.id,
-            image: c2.MetaTagDescription,
-            name: c2.name,
-            order: orderL2,
-            children: l3Kids,
-            showOnHome: false,
-          };
-        })
-      : [];
-    l2Kids.sort((a, b) => a.order - b.order);
-    return {
-      id: c1.id,
-      image: c1.MetaTagDescription,
-      name: c1.name,
-      order: orderL1,
-      children: l2Kids,
-      showOnHome: false,
-    };
-  });
-
-  result.sort((a, b) => a.order - b.order);
+  const result = categories.data
+    .map((c1) => {
+      const orderL1 = parseOrder(c1.Title, c1.id);
+      if (c1.Title && c1.Title.includes(HOME_SYMBOL)) {
+        toShowOnHome.push(c1.id);
+      }
+      const l2Children = c1.children ? mapChildren(c1.children, c1.Title) : [];
+      return createNode(c1, orderL1, l2Children);
+    })
+    .sort((a, b) => a.order - b.order);
 
   if (result.length <= 5) {
     result.forEach((a) => (a.showOnHome = true));

@@ -18,7 +18,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/proszki',
             children: [],
             Title: 'Proszki',
-            MetaTagDescription: 'Proszki'
+            MetaTagDescription: 'Proszki',
           },
           {
             id: 9293,
@@ -27,7 +27,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/płyny-i-żele',
             children: [],
             Title: 'Płyny i żele',
-            MetaTagDescription: 'Płyny i żele'
+            MetaTagDescription: 'Płyny i żele',
           },
           {
             id: 9294,
@@ -36,7 +36,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/kapsułki-i-tabletki',
             children: [],
             Title: 'Kapsułki i tabletki',
-            MetaTagDescription: 'Kapsułki i tabletki'
+            MetaTagDescription: 'Kapsułki i tabletki',
           },
           {
             id: 9295,
@@ -45,7 +45,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/płyny-do-płukania',
             children: [],
             Title: 'Płyny do płukania',
-            MetaTagDescription: 'Płyny do płukania'
+            MetaTagDescription: 'Płyny do płukania',
           },
           {
             id: 9296,
@@ -54,7 +54,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/odplamiacze-i-wybielacze',
             children: [],
             Title: 'Odplamiacze i wybielacze',
-            MetaTagDescription: ''
+            MetaTagDescription: '',
           },
           {
             id: 9297,
@@ -63,7 +63,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/dodatki-do-prania',
             children: [],
             Title: 'Dodatki do prania',
-            MetaTagDescription: 'Dodatki do prania'
+            MetaTagDescription: 'Dodatki do prania',
           },
           {
             id: 9298,
@@ -72,7 +72,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/dodatki-do-suszenia',
             children: [],
             Title: 'Dodatki do suszenia',
-            MetaTagDescription: 'Dodatki do suszenia'
+            MetaTagDescription: 'Dodatki do suszenia',
           },
           {
             id: 9299,
@@ -81,7 +81,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/środki-do-prasowania',
             children: [],
             Title: 'Środki do prasowania',
-            MetaTagDescription: 'Środki do prasowania'
+            MetaTagDescription: 'Środki do prasowania',
           },
           {
             id: 9313,
@@ -90,7 +90,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/akcesoria-do-prania-i-prasowania',
             children: [],
             Title: 'Akcesoria do prania i prasowania',
-            MetaTagDescription: 'Akcesoria do prania i prasowania'
+            MetaTagDescription: 'Akcesoria do prania i prasowania',
           },
           {
             id: 9665,
@@ -99,11 +99,12 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/pranie-i-prasowanie/środki-do-czyszczenia-pralki',
             children: [],
             Title: 'Środki do czyszczenia pralki',
-            MetaTagDescription: 'Środki do czyszczenia pralki'
-          }
+            MetaTagDescription: 'Środki do czyszczenia pralki',
+          },
         ],
         Title: '1',
-        MetaTagDescription: 'https://anotherprovider.com/categories/pranie-i-prasowanie.jpg'
+        MetaTagDescription:
+          'https://anotherprovider.com/categories/pranie-i-prasowanie.jpg',
       },
       {
         id: 9289,
@@ -118,7 +119,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/do-szyb-i-luster',
             children: [],
             Title: '5',
-            MetaTagDescription: 'Do szyb i luster'
+            MetaTagDescription: 'Do szyb i luster',
           },
           {
             id: 9283,
@@ -127,7 +128,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/środki-do-czyszczenia-łazienek',
             children: [],
             Title: '2',
-            MetaTagDescription: 'Środki do czyszczenia łazienek'
+            MetaTagDescription: 'Środki do czyszczenia łazienek',
           },
           {
             id: 9287,
@@ -136,7 +137,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/środki-do-pielęgnacji-mebli',
             children: [],
             Title: 'Środki do pielęgnacji mebli',
-            MetaTagDescription: 'Środki do pielęgnacji mebli'
+            MetaTagDescription: 'Środki do pielęgnacji mebli',
           },
           {
             id: 9301,
@@ -145,7 +146,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/środki-uniwersalne',
             children: [],
             Title: '3',
-            MetaTagDescription: 'Środki uniwersalne'
+            MetaTagDescription: 'Środki uniwersalne',
           },
           {
             id: 9302,
@@ -154,7 +155,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/do-mycia-podłog',
             children: [],
             Title: 'Do mycia podłóg',
-            MetaTagDescription: 'Do mycia podłóg'
+            MetaTagDescription: 'Do mycia podłóg',
           },
           {
             id: 9303,
@@ -163,7 +164,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/środki-do-czyszczenia-kuchni',
             children: [],
             Title: '1',
-            MetaTagDescription: 'Środki do czyszczenia kuchni'
+            MetaTagDescription: 'Środki do czyszczenia kuchni',
           },
           {
             id: 9304,
@@ -172,7 +173,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/odkamieniacze',
             children: [],
             Title: 'Odkamieniacze',
-            MetaTagDescription: 'Odkamieniacze'
+            MetaTagDescription: 'Odkamieniacze',
           },
           {
             id: 9305,
@@ -181,7 +182,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/środki-do-toalet-i-udrażniacze',
             children: [],
             Title: 'Środki do toalet i udrażniacze',
-            MetaTagDescription: 'Środki do toalet i udrażniacze'
+            MetaTagDescription: 'Środki do toalet i udrażniacze',
           },
           {
             id: 9307,
@@ -190,7 +191,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/zawieszki-toaletowe',
             children: [],
             Title: 'Zawieszki toaletowe',
-            MetaTagDescription: 'Zawieszki toaletowe'
+            MetaTagDescription: 'Zawieszki toaletowe',
           },
           {
             id: 9309,
@@ -199,7 +200,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/chusteczki-czyszczące',
             children: [],
             Title: '4',
-            MetaTagDescription: 'Chusteczki czyszczące'
+            MetaTagDescription: 'Chusteczki czyszczące',
           },
           {
             id: 9310,
@@ -208,7 +209,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/inne-preparaty',
             children: [],
             Title: 'Inne preparaty',
-            MetaTagDescription: 'Inne preparaty'
+            MetaTagDescription: 'Inne preparaty',
           },
           {
             id: 9311,
@@ -217,7 +218,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/zestawy-chemii-do-sprzątania',
             children: [],
             Title: 'Zestawy chemii do sprzątania',
-            MetaTagDescription: 'Zestawy chemii do sprzątania'
+            MetaTagDescription: 'Zestawy chemii do sprzątania',
           },
           {
             id: 9312,
@@ -226,7 +227,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/akcesoria-do-sprzątania',
             children: [],
             Title: 'Akcesoria do sprzątania',
-            MetaTagDescription: 'Akcesoria do sprzątania'
+            MetaTagDescription: 'Akcesoria do sprzątania',
           },
           {
             id: 9801,
@@ -235,11 +236,12 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/sprzątanie-i-czyszczenie/preparaty-na-insekty',
             children: [],
             Title: 'Preparaty na insekty',
-            MetaTagDescription: 'Preparaty na insekty'
-          }
+            MetaTagDescription: 'Preparaty na insekty',
+          },
         ],
         Title: '3',
-        MetaTagDescription: 'https://anotherprovider.com/categories/sprzatanie-i-czyszczenie.jpg'
+        MetaTagDescription:
+          'https://anotherprovider.com/categories/sprzatanie-i-czyszczenie.jpg',
       },
       {
         id: 9290,
@@ -254,7 +256,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/zmywanie-naczyń/kapsułki-i-tabletki-do-zmywarki',
             children: [],
             Title: 'Kapsułki i tabletki do zmywarki',
-            MetaTagDescription: 'Kapsułki i tabletki do zmywarki'
+            MetaTagDescription: 'Kapsułki i tabletki do zmywarki',
           },
           {
             id: 9315,
@@ -263,7 +265,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/zmywanie-naczyń/żele-i-proszki',
             children: [],
             Title: 'Żele i proszki',
-            MetaTagDescription: 'Żele i proszki'
+            MetaTagDescription: 'Żele i proszki',
           },
           {
             id: 9316,
@@ -272,7 +274,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/zmywanie-naczyń/sole-do-zmywarki',
             children: [],
             Title: 'Sole do zmywarki',
-            MetaTagDescription: 'Sole do zmywarki'
+            MetaTagDescription: 'Sole do zmywarki',
           },
           {
             id: 9317,
@@ -281,7 +283,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/zmywanie-naczyń/nabłyszczacze-i-czyściki',
             children: [],
             Title: 'Nabłyszczacze i czyściki',
-            MetaTagDescription: 'Nabłyszczacze i czyściki'
+            MetaTagDescription: 'Nabłyszczacze i czyściki',
           },
           {
             id: 9318,
@@ -290,7 +292,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/zmywanie-naczyń/zapachy-do-zmywarki',
             children: [],
             Title: 'Zapachy do zmywarki',
-            MetaTagDescription: 'Zapachy do zmywarki'
+            MetaTagDescription: 'Zapachy do zmywarki',
           },
           {
             id: 9319,
@@ -299,7 +301,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/zmywanie-naczyń/płyny-do-naczyń',
             children: [],
             Title: 'Płyny do naczyń',
-            MetaTagDescription: 'Płyny do naczyń'
+            MetaTagDescription: 'Płyny do naczyń',
           },
           {
             id: 9320,
@@ -308,7 +310,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/zmywanie-naczyń/zestawy-chemii-do-zmywania',
             children: [],
             Title: 'ZestawyZestawy chemii do zmywania',
-            MetaTagDescription: ''
+            MetaTagDescription: '',
           },
           {
             id: 9321,
@@ -317,11 +319,12 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/zmywanie-naczyń/akcesoria-do-zmywania',
             children: [],
             Title: 'Akcesoria do zmywania',
-            MetaTagDescription: 'Akcesoria do zmywania'
-          }
+            MetaTagDescription: 'Akcesoria do zmywania',
+          },
         ],
         Title: '2',
-        MetaTagDescription: 'https://anotherprovider.com/categories/zmywanie-naczyn.jpg'
+        MetaTagDescription:
+          'https://anotherprovider.com/categories/zmywanie-naczyn.jpg',
       },
       {
         id: 9291,
@@ -336,7 +339,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/aerozole-i-spraye',
             children: [],
             Title: '1',
-            MetaTagDescription: 'Aerozole i spraye'
+            MetaTagDescription: 'Aerozole i spraye',
           },
           {
             id: 9323,
@@ -345,7 +348,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/patyczki',
             children: [],
             Title: '3',
-            MetaTagDescription: 'Patyczki'
+            MetaTagDescription: 'Patyczki',
           },
           {
             id: 9324,
@@ -354,7 +357,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/dyfuzory',
             children: [],
             Title: 'Dyfuzory',
-            MetaTagDescription: 'Dyfuzory'
+            MetaTagDescription: 'Dyfuzory',
           },
           {
             id: 9325,
@@ -363,7 +366,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/żelowe',
             children: [],
             Title: 'Żelowe',
-            MetaTagDescription: 'Żelowe'
+            MetaTagDescription: 'Żelowe',
           },
           {
             id: 9326,
@@ -372,7 +375,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/saszetki',
             children: [],
             Title: 'Saszetki',
-            MetaTagDescription: 'Saszetki'
+            MetaTagDescription: 'Saszetki',
           },
           {
             id: 9327,
@@ -381,7 +384,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/świece',
             children: [],
             Title: '2',
-            MetaTagDescription: 'Świece'
+            MetaTagDescription: 'Świece',
           },
           {
             id: 9328,
@@ -390,7 +393,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/inne-odświeżacze',
             children: [],
             Title: '9',
-            MetaTagDescription: 'Inne odświeżacze'
+            MetaTagDescription: 'Inne odświeżacze',
           },
           {
             id: 9732,
@@ -399,7 +402,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/olejki-eteryczne',
             children: [],
             Title: 'Olejki eteryczne',
-            MetaTagDescription: 'Olejki eteryczne'
+            MetaTagDescription: 'Olejki eteryczne',
           },
           {
             id: 9800,
@@ -408,7 +411,7 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/tealighty-i-świece-bezzapachowe',
             children: [],
             Title: 'Tealighty i świece bezzapachowe',
-            MetaTagDescription: 'Tealighty i świece bezzapachowe'
+            MetaTagDescription: 'Tealighty i świece bezzapachowe',
           },
           {
             id: 9804,
@@ -417,14 +420,15 @@ export const INPUT = [
             url: 'https://exampledataprovider.com/porządki/powiew-świeżości/woski-zapachowe',
             children: [],
             Title: 'Woski zapachowe',
-            MetaTagDescription: 'Woski zapachowe'
-          }
+            MetaTagDescription: 'Woski zapachowe',
+          },
         ],
         Title: '4',
-        MetaTagDescription: 'https://anotherprovider.com/categories/powiew-swiezosci.jpg'
-      }
+        MetaTagDescription:
+          'https://anotherprovider.com/categories/powiew-swiezosci.jpg',
+      },
     ],
     Title: '2#',
-    MetaTagDescription: 'https://anotherprovider.com/categories/porzadki.jpg'
-  }
-]
+    MetaTagDescription: 'https://anotherprovider.com/categories/porzadki.jpg',
+  },
+];
