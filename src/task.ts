@@ -69,3 +69,6 @@ export const categoryTree = async (
 
   return result;
 };
+
+// TODO: 1. opisać ten refaktor
+// TODO: 2. sprawdzić czy jest poprawny
