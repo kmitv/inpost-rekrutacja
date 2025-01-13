@@ -51,9 +51,22 @@ const mapCategory = (
   );
 };
 
-const processCategories = (
-  categories: Category[]
-): { categoryListElements: CategoryListElement[]; toShowOnHome: number[] } => {
+const setShowOnHome = (
+  categoryListElements: CategoryListElement[],
+  toShowOnHome: number[]
+) => {
+  if (categoryListElements.length <= 5) {
+    categoryListElements.forEach((a) => (a.showOnHome = true));
+  } else if (toShowOnHome.length > 0) {
+    categoryListElements.forEach(
+      (x) => (x.showOnHome = toShowOnHome.includes(x.id))
+    );
+  } else {
+    categoryListElements.forEach((x, index) => (x.showOnHome = index < 3));
+  }
+};
+
+const processCategories = (categories: Category[]): CategoryListElement[] => {
   const toShowOnHome: number[] = [];
   const categoryListElements: CategoryListElement[] = categories
     .map((c1) => {
@@ -65,10 +78,9 @@ const processCategories = (
     })
     .sort((a, b) => a.order - b.order);
 
-  return {
-    categoryListElements,
-    toShowOnHome,
-  };
+  setShowOnHome(categoryListElements, toShowOnHome);
+
+  return categoryListElements;
 };
 
 export const categoryTree = async (
@@ -76,19 +88,7 @@ export const categoryTree = async (
 ): Promise<CategoryListElement[]> => {
   const categories = await getCategories();
 
-  const { categoryListElements, toShowOnHome } = processCategories(
-    categories.data
-  );
-
-  if (categoryListElements.length <= 5) {
-    categoryListElements.forEach((a) => (a.showOnHome = true));
-  } else if (toShowOnHome.length > 0) {
-    categoryListElements.forEach(
-      (x) => (x.showOnHome = toShowOnHome.includes(x.id))
-    );
-  } else {
-    categoryListElements.forEach((x, index) => (x.showOnHome = index < 3));
-  }
+  const categoryListElements = processCategories(categories.data);
 
   return categoryListElements;
 };
