@@ -51,34 +51,15 @@ const mapCategory = (
   );
 };
 
-const setShowOnHome = (
-  categoryListElements: CategoryListElement[],
-  toShowOnHome: number[]
-) => {
-  if (categoryListElements.length <= 5) {
-    categoryListElements.forEach((a) => (a.showOnHome = true));
-  } else if (toShowOnHome.length > 0) {
-    categoryListElements.forEach(
-      (x) => (x.showOnHome = toShowOnHome.includes(x.id))
-    );
-  } else {
-    categoryListElements.forEach((x, index) => (x.showOnHome = index < 3));
-  }
-};
-
 const processCategories = (categories: Category[]): CategoryListElement[] => {
-  const toShowOnHome: number[] = [];
   const categoryListElements: CategoryListElement[] = categories
-    .map((c1) => {
+    .map((c1, index, arr) => {
       const node = mapCategory(c1, c1.Title);
-      if (c1.Title && c1.Title.includes(HOME_SYMBOL)) {
-        toShowOnHome.push(c1.id);
-      }
+      const shouldShowOnHome = c1.Title && c1.Title.includes(HOME_SYMBOL);
+      node.showOnHome = arr.length <= 5 || shouldShowOnHome || index < 3;
       return node;
     })
     .sort((a, b) => a.order - b.order);
-
-  setShowOnHome(categoryListElements, toShowOnHome);
 
   return categoryListElements;
 };
