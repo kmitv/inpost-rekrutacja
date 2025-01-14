@@ -73,7 +73,3 @@ export const categoryTree = async (
 
   return categoryListElements;
 };
-
-// TODO: 1. opisać ten refaktor
-// TODO: 2. sprawdzić czy jest poprawny (chyba jest) ✅
-// TODO: 3. ugenerycznić catetoryTree ✅
